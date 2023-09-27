@@ -10,10 +10,10 @@ import reducer from "./context/reducer";
 import { initialState } from "./context/initialState";
 
 ReactDOM.render(
-    <Router>
+    <React.StrictMode>
         <StateProvider initialState={initialState}  reducer = {reducer}>
             <App/>
         </StateProvider>
-    </Router>,
+    </React.StrictMode>,
     document.getElementById('root')
 );

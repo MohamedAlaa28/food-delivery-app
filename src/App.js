@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import './App.css';
 import { AnimatePresence } from 'framer-motion';
 import { Header, MainContainer, CreateContainer } from './components';
@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <HashRouter>
       <AnimatePresence exitBeforeEnter>
         <div className="w-screen h-auto flex flex-col bg-primary">
           <Header />
@@ -36,11 +36,9 @@ function App() {
               <Route path='/createItem' element={<CreateContainer />} />
             </Routes>
           </main>
-
         </div>
       </AnimatePresence>
-    </Router>
-
+    </HashRouter>
   );
 }
 

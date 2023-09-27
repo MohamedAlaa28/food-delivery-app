@@ -64,7 +64,7 @@ export const Header = () => {
                 exit={{opacity : 0 , x : 200}}
                 className='flex items-center gap-24'>
                 <li className='text-base text-headingColor hover:text-headingColor duration-100
-                transition-all ease-out cursor-pointer'>Home</li>
+                transition-all ease-out cursor-pointer'><Link to="/">Home</Link></li>
                 <li className='text-base text-headingColor hover:text-headingColor duration-100
                 transition-all ease-out cursor-pointer'>Menu</li>
                 <li className='text-base text-headingColor hover:text-headingColor duration-100
@@ -164,7 +164,7 @@ export const Header = () => {
                                         <li className='text-base text-headingColor hover:text-headingColor duration-100
                                         transition-all ease-out cursor-pointer hover:bg-slate-100 px-4 py-2'
                                         onClick={()=>setIsMenu(false)}
-                                        >Home</li>
+                                        ><Link to="/">Home</Link></li>
                                         <li className='text-base text-headingColor hover:text-headingColor duration-100
                                         transition-all ease-out cursor-pointer hover:bg-slate-100 px-4 py-2'
                                         onClick={()=>setIsMenu(false)}
