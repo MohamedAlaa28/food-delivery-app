@@ -1,6 +1,6 @@
 import {getApp , getApps , initializeApp} from 'firebase/app';
 import{getFirestore} from 'firebase/firestore';
-import {getSorage, getStorage} from 'firebase/storage';
+import {getStorage} from 'firebase/storage';
 
 
 const firebaseConfig = {
