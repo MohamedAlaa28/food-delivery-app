@@ -31,23 +31,23 @@ const HomeContainer = () => {
         </button>
       </div>
       <div className='py-2 flex-1 flex items-center relative'>
-        <img src={HeroBg} className='ml-auto h-420 w-full lg:h-650 lg:w-auto' alt='hero-bg'/>
+        <img src={HeroBg} className='ml-auto h-420 w-full lg:h-650 lg:w-auto' alt='hero-bg' />
 
-        <div className='w-full h-full absolute top-0 left-0 flex items-center justify-center lg:px-32 py-4
+        <div className='w-full h-full absolute top-0 left-0 flex items-center justify-center lg:px-12 py-4
             gap-4 flex-wrap drop-shadow-lg'>
-            {
-                herpData && herpData.map(n =>(
-                    <div key={n.id} className='w- lg:w-190 p-4 bg-cardOverlay backdrop-blur-md rounded-3xl flex flex-col items-center justify-center'>
-                        <img src={n.imgSrc} className='w-20 lg:w-40 -mt-10 lg:-mt-20' alt='i1'/>
-                        <p className='text-base lg:tex-xl font-semibold text-textColor mt-2 lg:mt-4'>{n.name}</p>
+          {
+            herpData && herpData.map(n => (
+              <div key={n.id} className='w-lg:w-190 p-4 bg-cardOverlay backdrop-blur-md rounded-3xl flex flex-col items-center justify-center'>
+                <img src={n.imgSrc} className='w-20 lg:w-40 -mt-10 lg:-mt-20' alt='i1' />
+                <p className='text-base lg:tex-xl font-semibold text-textColor mt-2 lg:mt-4'>{n.name}</p>
 
-                        <p className='text-[12px] lg:text-sm text-lighttextGray font-semibold my-1 lg:my-3'>{n.description}</p>
+                <p className='text-[12px] lg:text-sm text-lighttextGray font-semibold my-1 lg:my-3'>{n.description}</p>
 
-                        <p className='text-sm font-semibold text-headingColor'>
-                            <span className='text-xs text-red-600'> $ </span> {n.price}</p>
-                    </div>
-                ))
-            }
+                <p className='text-sm font-semibold text-headingColor'>
+                  <span className='text-xs text-red-600'> $ </span> {n.price}</p>
+              </div>
+            ))
+          }
         </div>
       </div>
     </section>
